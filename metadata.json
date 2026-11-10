@@ -1,0 +1,6 @@
+{
+  "name": "Via Trinitatis — Planer Pielgrzymki Pieszej z Kochłowic",
+  "description": "Kompleksowa aplikacja do planowania pieszej pielgrzymki rozpoczynającej się 14 czerwca z Kościoła Trójcy Świętej i Sanktuarium Matki Bożej z Lourdes w Rudzie Śląskiej-Kochłowicach przez Jasną Górę i Kraków-Łagiewniki oraz na szlakach do Santiago de Compostela, Watykanu i Jerozolimy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
