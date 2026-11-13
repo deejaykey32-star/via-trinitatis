@@ -2,8 +2,8 @@ node_modules/
 build/
 dist/
 coverage/
-.wrangler/
 .DS_Store
 *.log
+.wrangler/
 .env*
 !.env.example

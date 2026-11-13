@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="186" fill="none" stroke="#eab308" stroke-width="10" opacity="0.35"/>
+  <!-- Camino Scallop Shell -->
+  <path d="M256 382 L142 222 C132 178 182 132 256 132 C330 132 380 178 370 222 Z" fill="none" stroke="#eab308" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M256 382 L256 132 M256 382 L198 148 M256 382 L314 148 M256 382 L156 184 M256 382 L356 184" stroke="#eab308" stroke-width="12" stroke-linecap="round"/>
+  <!-- Trinitatis Cross -->
+  <circle cx="256" cy="396" r="22" fill="#eab308"/>
+</svg>

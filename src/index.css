@@ -1,23 +1,55 @@
 @import "tailwindcss";
-
-@theme {
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-}
+@custom-variant dark (&:where(.dark, .dark *));
+@import "leaflet/dist/leaflet.css";
 
 @layer base {
-  body {
-    font-family: var(--font-sans);
-    background-color: #FAF9F6;
-    color: #1C1917;
+  :root {
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   }
 
-  h1, h2, h3, .font-serif-display {
+  body {
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-display {
     font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
   }
 }
 
 .tabular-nums {
   font-variant-numeric: tabular-nums;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* Custom Leaflet adjustments for mobile sunlight legibility */
+.leaflet-container {
+  font-family: var(--font-sans);
+  z-index: 1;
+}
+
+.dark .leaflet-tile-pane {
+  filter: brightness(0.86) contrast(1.08) saturate(0.9);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
